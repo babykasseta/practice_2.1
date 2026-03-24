@@ -4,13 +4,13 @@ file.write("Петров Петр:4,3,4,4 \n")
 file.write("Сидорова Мария:5,5,5,5 \n")
 file.close()
 
-with open("students.txt", "r") as file:
+with open("students.txt", "r", encoding="UTF-8") as file:
     lines=file.readlines()
 
 best_name = ""
 best_avg = 0
 
-with open("result.txt", "w") as result_file:
+with open("result.txt", "w", encoding="UTF-8") as result_file:
     for line in lines:
         line=line.strip()
         name, grades = line.split(":")
