@@ -24,6 +24,6 @@ with open("result.txt", "w") as result_file:
         if sr_bal > best_avg:
             best_name = name
             best_avg = sr_bal
-print(f"Лучший студент: {best_name} , {best_avg}\n")
+print(f"Лучший студент: {best_name}, средний балл: {best_avg}")
 
 
